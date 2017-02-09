@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Geocoder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body style ="margin: 50px">
+
+    <!-- TODO: Put your HTML code in here -->
+
+    <form class="form-inline" id="address-form">
+      <label class="sr-only" for="inlineFormInput">Address</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="address" placeholder="Street" style="width:300px">
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="locality" placeholder="City">
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="postal_code" placeholder="Postal Code">
+      <select class="custom-select" id="country">
+        <option selected>Country</option>
+        <option value="BE">Belgium</option>
+        <option value="BR">Brazil</option>
+        <option value="CA">Canada</option>
+        <option value="CN">China</option>
+        <option value="CY">Cyprus</option>
+        <option value="FR">France</option>
+        <option value="DE">Germany</option>
+        <option value="HK">Hong Kong</option>
+        <option value="IE">Ireland</option>
+        <option value="IT">Italy</option>
+        <option value="LB">Lebanon</option>
+        <option value="MO">Macau</option>
+        <option value="NL">Netherlands</option>
+        <option value="PT">Portugal</option>
+        <option value="RU">Russia</option>
+        <option value="ES">Spain</option>
+        <option value="GB">United Kingdom</option>
+        <option value="US">United States</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div id="coordinates" style="margin-top: 50px"></div>
+    <div id="map" style="height: 300px"></div>
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZbnL0b3sNHGI6-sl1MN76-Lj0jVPZZoo"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
